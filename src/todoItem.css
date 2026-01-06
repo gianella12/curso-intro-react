@@ -1,0 +1,31 @@
+.item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0;
+}
+.item p {
+    flex: 1;
+    margin: 0;
+    color: #4b5563;
+}
+.item.completado p {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+.item.completado span:first-child {
+    color: green;
+}
+
+.check,
+.delete {
+    font-size: 0.9rem;
+    color: #9ca3af;
+    cursor: pointer;
+}
+.delete:hover {
+    color: #ef4444;
+}
+.check:hover {
+    color: green;
+}
