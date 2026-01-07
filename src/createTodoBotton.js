@@ -1,6 +1,10 @@
-function CreateTodoBotton(){
+import { FaPlus } from "react-icons/fa";
+import "./createTodoBotton.css"
+function CreateTodoBotton() {
     return (
-        <button>Agregar</button>
+        <button className="boton-flotante">
+            <FaPlus />
+        </button>
     )
 }
-export { CreateTodoBotton}
+export { CreateTodoBotton }

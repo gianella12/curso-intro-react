@@ -1,8 +1,10 @@
 import "./todoSearch.css"
+import { AiOutlineSearch } from "react-icons/ai";
 function TodoSearch() {
     return (
-        <div className="contenedor">
-            <input placeholder="Pasear al perro" />
+        <div className="search-container">
+            <AiOutlineSearch className="search-icon" size={24} />
+            <input type="text" placeholder="Buscar..." className="search-input" />
         </div>
 
     )

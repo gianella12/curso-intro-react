@@ -13,19 +13,10 @@
     text-decoration: line-through;
     color: #9ca3af;
 }
-.item.completado span:first-child {
-    color: green;
-}
+
 
 .check,
 .delete {
     font-size: 0.9rem;
-    color: #9ca3af;
     cursor: pointer;
-}
-.delete:hover {
-    color: #ef4444;
-}
-.check:hover {
-    color: green;
 }
