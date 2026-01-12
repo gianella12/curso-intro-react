@@ -1,21 +1,20 @@
 import "./todoItem.css"
 import { FaCheckCircle } from "react-icons/fa";
-import { MdClose } from "react-icons/md";
+import { FaTrash } from "react-icons/fa";
 function TodoItem(props) {
   return (
     <div className={`item ${props.completed ? "completado" : ""}`}>
       <FaCheckCircle
         className="check"
-
+        onClick={props.onCompleted}
         size={18}
         color={props.completed ? "green" : "gray"}
-        style={{ transition: "color 0.3s ease" }}
       />
       <p>{props.text}</p>
-      <MdClose
-        className="delete"
+      <FaTrash
+      className="icono-basura"
+        onClick={props.onDeleted}
         size={18}
-        color="red"
       />
     </div>
   );
