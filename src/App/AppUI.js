@@ -7,6 +7,7 @@ import { TodosLoading } from '../TodosLoading';
 import { TodosError } from '../TodosError';
 import { EmptyTodos } from '../EmptyTodos';
 import { Modal } from '../Modal';
+import { TodoForm } from '../TodoForm';
 import { TodoContext } from '../TodoContext';
 import React, { useContext } from 'react';
 
@@ -19,7 +20,6 @@ function AppUI() {
         completeTodo,
         deleteTodo,
         openModal,
-        setOpenModal
     } = useContext(TodoContext)
     return (
         <React.Fragment >
@@ -47,7 +47,7 @@ function AppUI() {
                 <CreateTodoBotton />
                 {openModal && (
                     <Modal>
-                        funcionalidad de modal
+                        <TodoForm />
                     </Modal>
                 )}
             </div>

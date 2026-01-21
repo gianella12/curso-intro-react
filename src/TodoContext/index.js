@@ -36,20 +36,29 @@ function TodoProvider({ children }) {
         newTodos.splice(todoIndex, 1)
         saveItem(newTodos)
     }
+    const addTodo = (text) => {
+        const newTodos = [...item]
+        newTodos.push({
+            text,
+            completed: false,
+        })
+        saveItem(newTodos)
+    }
     return (
         <TodoContext.Provider value={{
-                loading,
-                error,
-                completedTodos,
-                totalTodos,
-                searchValue,
-                setSearchValue,
-                todosFiltrados,
-                completeTodo,
-                deleteTodo,
-                openModal,
-                setOpenModal
-            }}>
+            loading,
+            error,
+            completedTodos,
+            totalTodos,
+            searchValue,
+            setSearchValue,
+            todosFiltrados,
+            completeTodo,
+            addTodo,
+            deleteTodo,
+            openModal,
+            setOpenModal
+        }}>
             {children}
         </TodoContext.Provider>
     )

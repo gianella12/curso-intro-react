@@ -5,6 +5,7 @@
 
   width: 56px;
   height: 56px;
+  z-index: 1;
   border-radius: 50%;
 
   background: linear-gradient(135deg, #4facfe, #00f2fe);
