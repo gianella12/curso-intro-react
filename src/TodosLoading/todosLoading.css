@@ -1,0 +1,28 @@
+.loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.pelota {
+  width: 20px;
+  height: 20px;
+   background-color: greenyellow;
+  border-radius: 9999px;
+  animation: salto 0.9s ease-in-out infinite;
+}
+
+@keyframes salto {
+  0% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+}
