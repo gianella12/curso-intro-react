@@ -1,16 +1,18 @@
 .lista-tareas {
-    max-width: 600px;
-    min-width: 300px;
-    margin: 2rem auto;
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  max-width: 560px;
+  min-width: 300px;
+  width: 100%;
+  margin: 1.5rem auto;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.04), 0 12px 32px rgba(79,172,254,0.08);
+  border: 1px solid rgba(229, 231, 235, 0.8);
 }
 
 .lista-tareas h2 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #374151;
-    margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 1rem;
 }
